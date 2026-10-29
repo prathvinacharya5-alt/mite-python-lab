@@ -1,0 +1,22 @@
+text=input("enter a string:")
+
+print("First character :",text[0] if text else "Empty String")
+print("Last Character :",text[-1] if text else "Empty String")
+print("First five characters :",text[ :5])
+print("Reversed string :",text[ ::-1])
+
+print("Uppercase :",text.upper())
+print("Lowercase :",text.lower())
+
+sub=input("enter a character/substring to count:")
+print("Occurrence count :",text.count(sub))
+old=input("enter word to replace:")
+new=input("enter new word:")
+print("After replacement :",text.replace(old,new))
+words=text.split()
+print("split words :",words)
+print("Joined with '-':","-".join(words))
+start_sub=input("enter starting substring to check:")
+end_sub=input("enter ending substring to check:")
+print("Starts with given substring:",text.startswith(start_sub))
+print("Ends with given subsring:",text.endswith(end_sub))
